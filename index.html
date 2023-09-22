@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doğum Günü Kutlaması</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
+            /*background-image: url('bg.jpg');*/
+            background-size: auto 100%;
+            background-color: aqua;
+        }
+
+        .govde {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin-top: 100px;
-            font-family: Arial, sans-serif;
-            background-image: url('bg.jpg');
-            background-size: auto 100%;
-            background-color: #f0f0f0;
+            /*height: 100vh;*/
+            /*margin-top: 100px;*/
+            background-color: blueviolet;
         }
 
         .cake-container {
@@ -37,64 +42,77 @@
             transform: translateX(-50%);
             width: 100%;
             text-align: center;
+            margin-top: 100px;
         }
 
         .message {
-            padding: 10px 20px;
-            border-radius: 50%;
+            /*padding: 10px 20px;*/
+            background-color: burlywood;
             display: inline-block;
             font-size: 50px;
             font-weight: bold;
             font-family: Georgia, 'Times New Roman', Times, serif;
 
         }
-        .name-span{
+
+        .name-span {
             font-size: 64px;
             font-style: bold;
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
-        .metin-mesaj{
+
+        .metin-mesaj {
             margin-top: 50px;
         }
-        .metin-span{
+
+        .metin-span {
             font-size: 20px;
         }
-        .video{
+
+        .video {
             margin-top: 10px;
             margin-bottom: 50px;
         }
-        video{
+
+        video {
             border-radius: 10px;
         }
     </style>
 </head>
+
 <body>
-    
-    <div class="cake-container">
-        <div class="message-container">
-            <div class="message">İyiki Doğdun <br/> <span class="name-span">Ali</span></div>
-        </div>
-        <img src="pasta.gif" alt="Doğum Günü Pastası" class="cake">
+    <div class="govde">
         <div class="metin-mesaj">
-            <span class="metin-span"> 
-                Ali'cim, doğum günün kutlu olsun!<br/>
-                Sağlık, mutluluk ve başarılar seninle olsun.<br/>
-                Nice yıllara, nice güzel anılara!<br/>
-                İyi ki doğdun, Ali!
-            </span>
+
+            <div class="cake-container">
+                <div class="message-container">
+                    <div class="message">İyiki Doğdun <br /> <span class="name-span">Ali</span></div>
+                </div>
+                <img src="pasta.gif" alt="Doğum Günü Pastası" class="cake">
+                <span class="metin-span">
+                    Ali'cim, doğum günün kutlu olsun!<br />
+                    Sağlık, mutluluk ve başarılar seninle olsun.<br />
+                    Nice yıllara, nice güzel anılara!<br />
+                    İyi ki doğdun, Ali!
+                </span>
+
+
+                <br />
+                <br />
+                <br />
+            
+                <div class="video">
+                    <video width="320" height="240" controls>
+                        <source src="video_adresi.mp4" type="video/mp4">
+                        <source src="video_adresi.webm" type="video/webm">
+                        <source src="video_adresi.ogg" type="video/ogg">
+                        Tarayıcınız video etiketini desteklemiyorsa, buraya tıklayarak videoyu indirin.
+                    </video>
+                </div>
+            </div>
+            <!-----<img src="donkey.gif" alt="Doğum Günü Pastası" class="cake">-->
         </div>
-        <br/>
-        <br/>
-        <br/>
-        <div class="video">
-            <video width="320" height="240" controls>
-                <source src="video_adresi.mp4" type="video/mp4">
-                <source src="video_adresi.webm" type="video/webm">
-                <source src="video_adresi.ogg" type="video/ogg">
-                Tarayıcınız video etiketini desteklemiyorsa, buraya tıklayarak videoyu indirin.
-            </video>
-        </div>
-        <!-----<img src="donkey.gif" alt="Doğum Günü Pastası" class="cake">-->
     </div>
 </body>
+
 </html>
